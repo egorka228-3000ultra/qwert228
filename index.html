@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#102a43" />
+    <title>Расписание группы</title>
+    <script type="module" crossorigin src="/assets/index-BhupfifN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C3Wdcbu6.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="schedule-app" aria-label="Сервис расписания">
+        <header class="app-header">
+          <div class="brand-mark">Р</div>
+          <div>
+            <p class="eyebrow">Учебный навигатор</p>
+            <h1>Расписание</h1>
+          </div>
+          <span class="status-dot" title="Подключение к Supabase"></span>
+        </header>
+
+        <div class="control-panel">
+          <label for="group-select">Группа</label>
+          <select id="group-select" aria-label="Выберите группу">
+            <option value="">Загрузка групп...</option>
+          </select>
+        </div>
+
+        <nav class="day-tabs" aria-label="Дни недели" id="day-tabs"></nav>
+
+        <section class="chat-window" id="chat-window" aria-live="polite">
+          <div class="welcome-message">
+            <span class="message-icon">✦</span>
+            <div>
+              <strong>Привет!</strong>
+              <p>Выбери группу, чтобы увидеть расписание.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="quick-actions" aria-label="Быстрые команды">
+          <button type="button" data-command="today">Сегодня</button>
+          <button type="button" data-command="now">Что сейчас?</button>
+        </div>
+
+        <form class="command-bar" id="command-form">
+          <input id="command-input" type="text" placeholder="Напиши /today или /now" autocomplete="off" />
+          <button type="submit" aria-label="Отправить команду">&#8594;</button>
+        </form>
+        <p class="hint">Команды: <b>/today</b> и <b>/now</b></p>
+      </section>
+    </main>
+  </body>
+</html>
