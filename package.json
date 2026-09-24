@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "dev": "vite frontend --host 0.0.0.0",
-    "build": "vite build frontend",
-    "preview": "vite preview frontend"
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@supabase/server": "^1.8.0",
@@ -12,5 +12,8 @@
   },
   "engines": {
     "node": ">=20.9.0"
+  },
+  "allowScripts": {
+    "esbuild": true
   }
 }
